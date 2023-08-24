@@ -1,0 +1,365 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap5" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="{% static 'static_page2/fonts/icomoon/style.css' %}">
+	<link rel="stylesheet" href="{% static 'static_page2fonts/flaticon/font/flaticon.css' %}">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="{% static 'static_page2/css/tiny-slider.css' %}">
+	<link rel="stylesheet" href="{% static 'static_page2/css/aos.css' %}">
+	<link rel="stylesheet" href="{% static 'static_page2/css/glightbox.min.css' %}">
+	<link rel="stylesheet" href="{% static 'static_page2/css/style.css' %}">
+
+	<link rel="stylesheet" href="{% static 'static_page2/css/flatpickr.min.css' %}">
+
+
+	<title>{{place}}</title>
+</head>
+<body>
+
+	<div class="site-mobile-menu site-navbar-target">
+		<div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close">
+				<span class="icofont-close js-menu-toggle"></span>
+			</div>
+		</div>
+		<div class="site-mobile-menu-body"></div>
+	</div>
+	<nav class="site-nav">
+		<div class="container">
+		  <div class="site-navigation">
+			<a href="" class="logo m-0">Travel Ready <span class="text-primary">.</span></a>
+	
+			<ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+			
+			  <li><a >Home</a></li>
+			 
+			  <li class="has-children">
+				<a >Travel</a>
+				<ul class="dropdown">
+					<li><a >Bus</a></li>
+					<li><a >Train</a></li>
+					<li class="has-children">
+						<a >Flights</a>
+						<ul class="dropdown">
+							<li><a >High Class</a></li>
+							<li><a >Middel Class</a></li>
+							<li><a >Low Class</a></li>
+						</ul>
+					</li>
+					<li><a >Car</a></li>
+				</ul>
+			
+				</li>
+			  <li class="active"><a href="/services">Services</a></li>
+			  <li><a href="/about">About</a></li>
+			  <li><a href="/contact">Contact Us</a></li>
+			  <li><a>{{fname}}</a></li>
+			</ul>
+	
+			<a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
+			  <span></span>
+			</a>
+	
+		  </div>
+		</div>
+	  </nav>
+
+	<!-- Start retroy layout blog posts -->
+	<section class="section bg-light">
+		<div class="container">
+			<div class="row align-items-stretch retro-layout">
+				<div class="col-md-4">
+					<a href="single.html" class="h-entry mb-30 v-height gradient">
+
+						<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x440/?{{list.61}}');"></div>
+
+						<div class="text">
+							<span class="date">{{date}}</span>
+							<h2>At first {{list.61}}</h2>
+						</div>
+					</a>
+					<a href="single.html" class="h-entry v-height gradient">
+
+						<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x440/?{{list.62}}');"></div>
+
+						<div class="text">
+							<span class="date">{{date}}</span>
+							<h2>Then next {{list.62}}</h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="single.html" class="h-entry img-5 h-100 gradient">
+
+						<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x964/?{{list.63}}');"></div>
+
+						<div class="text">
+							<span class="date">{{date}}</span>
+							<h2>Then next {{list.63}} </h2>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="single.html" class="h-entry mb-30 v-height gradient">
+
+						<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x440/?{{list.64}}');"></div>
+
+						<div class="text">
+							<span class="date">{{date}}</span>
+							<h2>Then next {{list.64}}</h2>
+						</div>
+					</a>
+					<a href="single.html" class="h-entry v-height gradient">
+
+						<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x440/?{{list.65}}');"></div>
+
+						<div class="text">
+							<span class="date">{{date}}</span>
+							<h2>Then next {{list.65}}</h2>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="py-5 cta-section">
+		<div class="container ">
+			<div class="row text-center">
+				<div class="col-md-12">
+					<h2 class="mb-2 text-black">Lets Do This</h2>
+					<p class="mb-4 lead text-black text-black-opacity"></p>
+					<button class="mb-0 rounded"><a href="{% url 'final' place='{{place}}' date='{{date}}' %}" class="btn btn-outline-black text-black btn-md font-weight-bold">Book Now</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Start posts-entry -->
+	<section class="section posts-entry">
+		<div class="container">
+			<div class="row mb-4">
+				<div class="col-sm-6">
+					<h2 class="posts-entry-title">Culture</h2>
+				</div>
+				<div class="col-sm-6 text-sm-end"><a  class="read-more">View All</a></div>
+			</div>
+			<div class="row g-3">
+				<div class="col-md-9 order-md-2">
+					<div class="row g-3">
+						<div class="col-md-6">
+							<div class="blog-entry">
+								<a href="single.html" class="img-link">
+									<img src="https://source.unsplash.com/random/700x700/?{{list.63}}" alt="Image" class="img-fluid">
+								</a>
+								<span class="date">{{date}}</span>
+								<h2><a >{{list.11}}</a></h2>
+								<p>{{list.12}}</p>
+								<p><a class="btn btn-sm btn-outline-primary">Read More</a></p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="blog-entry">
+								<a href="single.html" class="img-link">
+									<img src="https://source.unsplash.com/random/700x700/?{{list.64}}" alt="Image" class="img-fluid">
+								</a>
+								<span class="date">Apr. 14th, 2022</span>
+								<h2><a >{{list.21}}</a></h2>
+								<p>{{list.22}}</p>
+								<p><a  class="btn btn-sm btn-outline-primary">Read More</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled blog-entry-sm">
+						<li>
+							<span class="date">Apr. 14th, 2022</span>
+							<h3><a >{{list.31}}</a></h3>
+							<p>{{list.32}}</p>
+							<p><a  class="read-more">Continue Reading</a></p>
+						</li>
+
+						<li>
+							<span class="date">Apr. 14th, 2022</span>
+							<h3><a >{{list.41}}</a></h3>
+							<p>{{list.42}}</p>
+							<p><a  class="read-more">Continue Reading</a></p>
+						</li>
+
+						<li>
+							<span class="date">Apr. 14th, 2022</span>
+							<h3><a >{{list.51}}</a></h3>
+							<p>{{list.52}}</p>
+							<p><a  class="read-more">Continue Reading</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<div class="section bg-light">
+		<div class="container">
+
+			<div class="row mb-4">
+				<div class="col-sm-6">
+					<h2 class="posts-entry-title">Travel</h2>
+				</div>
+				<div class="col-sm-6 text-sm-end"><a  class="read-more">View All</a></div>
+			</div>
+
+			<div class="row align-items-stretch retro-layout-alt">
+
+				<div class="col-md-5 order-md-2">
+					<a href="single.html" class="hentry img-1 h-100 gradient">
+						<div class="featured-img" style="background-image: url('{% static 'static_page2/images/img_2_vertical.jpg' %}');"></div>
+						<div class="text">
+							<span></span>
+							<h2>Top Hotels</h2>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-7">
+
+					<a href="single.html" class="hentry img-2 v-height mb30 gradient">
+						<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x440/?cabs');"></div>
+						<div class="text text-sm">
+							<span></span>
+							<h2>cabs with low cost</h2>
+						</div>
+					</a>
+
+					<div class="two-col d-block d-md-flex justify-content-between">
+						<a href="single.html" class="hentry v-height img-2 gradient">
+							<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x700/?resorts');"></div>
+							<div class="text text-sm">
+								<span></span>
+								<h2>Amazing resorts</h2>
+							</div>
+						</a>
+						<a href="single.html" class="hentry v-height img-2 ms-auto float-end gradient">
+							<div class="featured-img" style="background-image: url('https://source.unsplash.com/random/700x700/?flights');"></div>
+							<div class="text text-sm">
+								<span></span>
+								<h2>Flights booking</h2>
+							</div>
+						</a>
+					</div>  
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="site-footer">
+		<div class="inner first">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading">About Tour</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+						<div class="widget">
+							<ul class="list-unstyled social">
+								<li><a href="#"><span class="icon-facebook"></span></a></li>
+								<li><a href="#"><span class="icon-instagram"></span></a></li>
+								<li><a href="#"><span class="icon-facebook"></span></a></li>
+								<li><a href="#"><span class="icon-linkedin"></span></a></li>
+								<li><a href="#"><span class="icon-dribbble"></span></a></li>
+								<li><a href="#"><span class="icon-pinterest"></span></a></li>
+								<li><a href="#"><span class="icon-apple"></span></a></li>
+								<li><a href="#"><span class="icon-google"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2 pl-lg-5">
+						<div class="widget">
+							<h3 class="heading">Pages</h3>
+							<ul class="links list-unstyled">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-2">
+						<div class="widget">
+							<h3 class="heading">Resources</h3>
+							<ul class="links list-unstyled">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="widget">
+							<h3 class="heading">Contact</h3>
+							<ul class="list-unstyled quick-info links">
+								<li class="email"><a href="#">mail@example.com</a></li>
+								<li class="phone"><a href="#">+1 222 212 3819</a></li>
+								<li class="address"><a href="#">43 Raymouth Rd. Baltemoer, London 3910</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="inner dark">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 mb-3 mb-md-0 mx-auto">
+						<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love 
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="overlayer"></div>
+	<div class="loader">
+		<div class="spinner-border" role="status">
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+
+
+    <script src="{% static 'static_page2/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'static_page2/js/tiny-slider.js' %}"></script>
+    <script src="{% static 'static_page2/js/flatpickr.min.js' %}"></script>
+    <script src="{% static 'static_page2/js/aos.js' %}"></script>
+    <script src="{% static 'static_page2/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'static_page2/js/navbar.js' %}"></script>
+    <script src="{% static 'static_page2/js/counter.js' %}"></script>
+    <script src="{% static 'static_page2/js/custom.js' %}"></script>
+
+    
+  </body>
+  </html>

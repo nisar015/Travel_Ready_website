@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kochi, Kerala</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body style="background-image: url('divyanshi.jpg');">
+  <div class="container mt-5">
+    <h1 class="text-center">Welcome to Kochi, Kerala</h1>
+    <p class="text-center">Kochi, also known as Cochin, is a vibrant city located in the state of Kerala, India. It is a
+      major port city
+      and a melting pot of cultures, offering a blend of modernity and tradition.</p>
+
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{%static 'images/divyanshi.jpg' %}" alt="divyanshi" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="{%static 'images/abhishek.jpg' %}" alt="abhishek" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="{%static 'images/nature.jpg' %}" alt="nature" class="img-fluid">
+      </div>
+    </div>
+
+    <p class="text-center mt-3">Explore the beautiful backwaters, historical sites, and scenic beauty of this enchanting
+      city.</p>
+  </div>
+
+  <!-- Link to Bootstrap JS and jQuery (required for Bootstrap features) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
